@@ -104,11 +104,42 @@
     <div class="container-first">
         <div class="container-first-ar">
             <div class="container-title">
-                <span class="container-title-text">software download</span>
+                <span class="container-title-text">Introduction</span>
             </div>
-            <!-- 添加下载链接区域 -->
+            <style>
+                .service-content {
+                    color: #666;
+                    line-height: 1.8;
+                }
+            </style>
             <div class="container-content">
-                <div class="download-section" style="padding: 20px;">
+                <ul class="service-content">
+                    <li style="color: #1B5E20; font-weight: bold; font-size: 18px;">How to use this interface to calculate I-V experiment data?</li> 
+                    <li>1.The data file should be .xlsx format with distinguishable column names, such as 'Voltage(V)' for voltage data column and 'Current(A)' for current data column. </li>
+                    <li>2.All units should be SI units. Volt for voltage and ampere for current. If your original data unit is not SI units, such as μA, you should convert them to SI units by multiplying a constant before using this interface. </li>
+                    <li>3.Filling the 'File settings' section on the interface with corresponding column names in your .xlsx file. </li>
+                    <li>4.Choosing data files and setting relative work function and field enhancement factor. </li>
+                    <li>5.Choosing calculating mode. 'Fixed WF' mode allows you to fix the work function value with input work function during calculation and automatically estimate corresponding field enhancement factor with M-G theory. 'Fixed FEF' mode allows you to fix the field enhancement factor value with input field enhancement factor during calculation and automatically estimate corresponding work function with M-G theory. </li>
+                    <li>6.Choosing result files saving path, and start calculating. The result includes a preview picture and a .xlsx data file. </li>
+                    
+                    <li style="color: #1B5E20; font-weight: bold; font-size: 18px; margin-top: 20px;">How to use this interface to calculate FEED of a field emission process? </li> 
+                    <li>1.Setting relative work function, temperature and electric field values. </li>
+                    <li>2.Choosing result files saving path, and start calculating. The result includes a preview picture and a .xlsx data file. </li>
+                </ul>
+            </div>
+
+            <div class="container-title">
+                <span class="container-title-text"></span>
+            </div>
+
+            <div class="container-content">
+                <ul class="service-content">
+                    <li>update date：2023.07.01 If you meet any problem or have any advice, please send emails to <span style="color: #0066cc; text-decoration: underline;">tangsh58@mail.sysu.edu.cn</span> and <span style="color: #0066cc; text-decoration: underline;">goumk@mail2.sysu.edu.cn</span>, thanks!</li>
+                </ul>
+            </div>
+
+            <div style="position: relative; min-height: 60px;">
+                <div class="download-section" style="position: absolute; bottom: 20px; right: 20px;">
                     <a href="https://github.com/Tang-FE-SYSU/web/releases/download/V1.0/SYSU.field.emission.calculator.zip" 
                        download
                        style="display: inline-block;
